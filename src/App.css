@@ -4,8 +4,12 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
-  padding: 1rem;
+  padding: 0 1rem;
   background-color: rgb(75, 180, 199);
+}
+
+.header {
+  padding-top: 1rem
 }
 
 .header-image{
