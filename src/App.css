@@ -1,5 +1,114 @@
 .App {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
   text-align: center;
+  height: 100vh;
+  padding: 1rem;
+  background-color: rgb(75, 180, 199);
+}
+
+.header-image{
+  width: 60rem;
+  height: 9.625rem;
+}
+
+.container{
+  border: .2rem solid rgb(182, 92, 122);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  width: 60rem;
+}
+
+.to-do-form{
+  display: grid;
+  padding: 2rem 1rem;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 1rem;
+}
+
+input{
+  border: none;
+  border-bottom: .2rem solid rgb(38, 71, 133);
+  margin: 0 1rem;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0 1rem;
+}
+
+input::placeholder{
+  color: white;
+  font-weight: 100;
+}
+
+.add-to-do-button{
+  background-color: rgb(38, 71, 133);
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.to-do-list{
+  display: grid;
+  padding: 1rem 2rem;
+  justify-items: center;
+  grid-auto-rows: auto;
+  grid-row-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.to-do-wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.to-do{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.complete-to-do-button{
+  padding: .25rem .8rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: rgb(75, 180, 199);
+}
+
+button{
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: initial;
+  background-color: gainsboro;
+}
+
+.fa-check, .fa-times{
+  padding-right: 1rem;
+}
+
+.fa-check{
+  color: green;
+}
+
+.fa-times{
+  color: darkred;
 }
 
 .App-logo {
