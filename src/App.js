@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 import "./App.css";
@@ -23,6 +23,10 @@ function App() {
     },
   ]);
 
+  useEffect(() => {
+    alert("Welcome!")
+  }, [])
+
   const addTask = (text) => {
     const id = Math.floor(Math.random() * 100000) + 1;
     const newTask = { id, text, done: false };
@@ -42,9 +46,9 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        <AddTodo onAdd={addTask} />
+        <AddTodo onAdd={ addTask } />
 
-        <ToDoList tasks={tasks} onMark={markAsDone} />
+        <ToDoList tasks={ tasks } onMark={ markAsDone } />
       </div>
     </div>
   );

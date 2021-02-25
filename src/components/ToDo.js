@@ -11,7 +11,7 @@ const ToDo = ({ id, text, done, onMark }) => {
 
       <p>{ text }</p>
 
-      <button className='complete-to-do-button' disabled={ done ? true : false } onClick={() => onMark(id) }>
+      <button className='complete-to-do-button' disabled={ done ? true : false } onClick={ () => onMark(id) }>
         {
           done
             ? "DONE!"

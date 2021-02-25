@@ -27,6 +27,14 @@ class App extends React.Component {
     ];
   }
 
+  componentDidMount() {
+    alert("Welcome")
+  }
+
+  componentWillUnmount() {
+    alert("Byeee")
+  }
+
   addTask = (text) => {
     const id = Math.floor(Math.random() * 100000) + 1;
     const newTask = { id, text, done: false };
