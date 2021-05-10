@@ -25,6 +25,11 @@ function App() {
       id: 4,
       text: "Feed the dog (woof)",
       done: false,
+    },
+    {
+      id: 5,
+      text: "Wash the dog (woof)",
+      done: false,
     }
   ]);
 
